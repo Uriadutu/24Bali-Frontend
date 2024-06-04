@@ -8,10 +8,11 @@ const Layout = ({children}) => {
         <Navbar />
       </div>
       <div
-        className="flex bg-[#37B9C2] mt-3 z-10"
+        className="flex bg-gradient-to-b from-[#37B9C2] to-[#98C3C4] mt-3 z-10"
         style={{ minHeight: "100vh" }}
       >
-        <div className="w-full">
+        <div className="w-full
+        ">
           <main>{children}</main>
         </div>
       </div>

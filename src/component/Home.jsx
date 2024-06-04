@@ -22,9 +22,9 @@ const Home = () => {
       <div className=" mt-[60px] ">
         {/* //berita */}
         <div className="bg-[#98C3C4] px-[35px] py-[30px] rounded-xl grid gap-x-8 gap-y-4 grid-cols-3 ">
-          {berita.map((item) => (
+          {berita.map((item, index) => (
             <div
-              key={item && item.id_laporan}
+              key={index}
               className="bg-white p-3 rounded-xl drop-shadow-lg bg-opacity-[80%]"
             >
               <p className=" text-[#F09F0C] my-1 font-bold">BaliNews</p>
@@ -44,8 +44,8 @@ const Home = () => {
           ))}
         </div>
         {/* //hoax check */}
-        <div className="flex justify-between grid grid-cols-2 gap-x-5 mt-[20px]">
-          <div className="bg-white rounded-xl p-5 text-center">
+        <div className="flex justify-between grid grid-flow-row-dense grid-cols-3 gap-5 mt-[20px]">
+          <div className="bg-white rounded-xl p-5 text-center col-span-2">
             <div className="flex justify-center my-3  text-[#F09F0C] font-bold ">
               <p>HoaxCheck</p>
             </div>
