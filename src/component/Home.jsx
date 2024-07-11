@@ -5,6 +5,7 @@ import LogoFooter from "../img/Bali24.png"
 
 const Home = () => {
   const [berita, setBerita] = useState([]);
+  
   const getBerita = async () => {
     try {
       const response = await axios.get("http://localhost:5000/laporan");
@@ -13,6 +14,8 @@ const Home = () => {
       console.log(error);
     }
   };
+  
+
   useEffect(() => {
     getBerita();
   });
@@ -34,6 +37,7 @@ const Home = () => {
                 src={item && item.url}
                 alt=""
               />
+              
               <p className="my-1 ">{item && item.Title}</p>
               <div className="flex justify-end">
                 <Link to={`/detail/${item && item.id_laporan}`}>
@@ -42,6 +46,7 @@ const Home = () => {
               </div>
             </div>
           ))}
+          
         </div>
         {/* //hoax check */}
         <div className="flex justify-between grid grid-flow-row-dense grid-cols-3 gap-5 mt-[20px]">

@@ -23,8 +23,8 @@ const Detail = () => {
       <div className="mt-[60px]">
         <img className="w-full h-[600px]" style={{objectFit: "cover"}} src={detail && detail.url} alt="" />
         <div className="my-5 flex justify-center">{detail && detail.Title}</div>
-        <div className="flex jutify-end px-[100px] grid gap-x-5 grid-cols-2 mt-[80px]">
-          <div className="w-full">
+        <div className="flex justify-between px-[100px] grid grid-flow-row-dense grid-cols-3 gap-5 mt-[80px]">
+          <div className="w-full col-span-2">
             <p>{detail && detail.Content}</p>
           </div>
           <div className="">

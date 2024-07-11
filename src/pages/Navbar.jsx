@@ -1,21 +1,22 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { waktuFormat } from "../utils/helper";
-import LogoAPk from "../img/LogoApk.png"
+import LogoAPk from "../img/LogoApk.png";
 import { useDispatch, useSelector } from "react-redux";
 import { LogOut, reset } from "../features/authSlice";
 
 const Navbar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-    const waktu = new Date();
-    const {user} = useSelector((state) => state.auth);
-
-    const logout = () => {
-      dispatch(LogOut());
-      dispatch(reset());
-      navigate("/");
-    };
+  const waktu = new Date();
+  
+  const { user } = useSelector((state) => state.auth);
+ 
+  const logout = () => {
+    dispatch(LogOut());
+    dispatch(reset());
+    navigate("/");
+  };
 
   return (
     <div>
@@ -26,7 +27,7 @@ const Navbar = () => {
           <Link to={"/balireport"}>BaliReport</Link>
           <Link>BaliResponse</Link>
           <Link>HoaxCheck</Link>
-          <Link>BaliEmergency</Link>
+          <Link to={"/emergency"}>BaliEmergency</Link>
         </div>
         <div className="flex justify-between  w-[400px] items-center">
           <div className="flex border rounded-md shadow-sm p-1 w-[200px]">
