@@ -9,12 +9,7 @@ const HoaxCheck = () => {
   return (
     <div className="p-10">
       <div className="bg-white rounded-2xl p-5 mt-[60px] w-full shadow-lg flex flex-col justify-between h-full">
-        <div className="flex justify-between items-center mb-5">
-          <div className="text-xl font-bold cursor-pointer">
-            <button onClick={back}>Back</button>
-          </div>
-          <h3>Selasa, 9 July 2024</h3>
-        </div>
+        
         <div className="flex justify-between flex-grow">
           <div className="flex flex-col items-center flex-1">
             <div className="bg-gray-400 text-white p-3 my-1 rounded-lg w-11/12">

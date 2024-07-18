@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="flex jutify-between gap-9  text-[#F09F0C] font-bold">
           <Link to={"/"}>BaliNews</Link>
           <Link to={"/balireport"}>BaliReport</Link>
-          <Link>BaliResponse</Link>
+          <Link to={"/baliresponse"}>BaliResponse</Link>
           <Link to={"/hoaxcheck"}>HoaxCheck</Link>
           <Link to={"/emergency"}>BaliEmergency</Link>
         </div>

@@ -8,6 +8,7 @@ import AddLaporanPage from "./pages/AddLaporanPage";
 import EmergencyPage from "./pages/EmergencyPage";
 import HoaxCheckPage from "./pages/HoaxCheckPage";
 import LihatLaporanPage from "./pages/LihatLaporanPage";
+import BaliResponsePage from "./pages/BaliResponsePage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/lihat/:id" element={<LihatLaporanPage/>} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/balireport" element={<BalireportPage />} />
+          <Route path="/baliresponse" element={<BaliResponsePage />} />
           <Route path="/addlaporan" element={<AddLaporanPage />} />
           <Route path="/emergency" element={<EmergencyPage />} />
           <Route path="/hoaxcheck" element={<HoaxCheckPage />} />

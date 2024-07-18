@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import LogoFooter from "../img/Bali24.png";
+import baliRes from "../img/baliRes.jpeg"
 
 const Home = () => {
   const [berita, setBerita] = useState([]);
@@ -71,6 +72,24 @@ const Home = () => {
           <div className="bg-white rounded-xl p-3 ">
             <div className="flex justify-center my-3 text-[#F09F0C] font-bold">
               <p>Bali Response</p>
+            </div>
+            <div className="mt-2 flex">
+              <div className="">
+                <img src={baliRes} alt="balires" />
+                <div className="mt-1">
+                  <h1 className="font-bold mb-3">Tari Kecak</h1>
+                  <p className="mb-3">
+                    Hari/Tanggal: Sabtu, 20 Juli 2024 <br />
+                    Jam: 17.00 WITA <br />
+                    Lokasi: Pura Uluwatu
+                  </p>
+                  <p>
+                    Ditempatkan di atas Pura Uluwatu yang megah, dengan panorama
+                    matahari terbenam yang indah, pertunjukan ini menghadirkan
+                    suasana magis yang tak terlupakan.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
