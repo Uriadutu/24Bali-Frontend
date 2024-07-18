@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link to={"/"}>BaliNews</Link>
           <Link to={"/balireport"}>BaliReport</Link>
           <Link>BaliResponse</Link>
-          <Link>HoaxCheck</Link>
+          <Link to={"/hoaxcheck"}>HoaxCheck</Link>
           <Link to={"/emergency"}>BaliEmergency</Link>
         </div>
         <div className="flex justify-between  w-[400px] items-center">

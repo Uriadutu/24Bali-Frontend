@@ -6,6 +6,8 @@ import SignUp from "./component/SignUp";
 import BalireportPage from "./pages/BalireportPage";
 import AddLaporanPage from "./pages/AddLaporanPage";
 import EmergencyPage from "./pages/EmergencyPage";
+import HoaxCheckPage from "./pages/HoaxCheckPage";
+import LihatLaporanPage from "./pages/LihatLaporanPage";
 
 function App() {
   return (
@@ -15,10 +17,12 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/detail/:id" element={<DetailPage />} />
+          <Route path="/lihat/:id" element={<LihatLaporanPage/>} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/balireport" element={<BalireportPage />} />
           <Route path="/addlaporan" element={<AddLaporanPage />} />
           <Route path="/emergency" element={<EmergencyPage />} />
+          <Route path="/hoaxcheck" element={<HoaxCheckPage />} />
         </Routes>
       </BrowserRouter>
     </div>

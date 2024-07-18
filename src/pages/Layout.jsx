@@ -13,7 +13,7 @@ const Layout = ({children}) => {
       >
         <div className="w-full
         ">
-          <main>{children}</main>
+          <main className='h-full'>{children}</main>
         </div>
       </div>
     </React.Fragment>
